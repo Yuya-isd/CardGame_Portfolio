@@ -2,37 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//“ÁêUŒ‚‚Ìscript
-//ŠÖ”‚Ì•À‚Ñ‡‚Å‰º‚É˜A‚ê—Dæ“x‚Í’á‚­‚È‚é
+//ç‰¹æ®Šæ”»æ’ƒã®script
+//é–¢æ•°ã®ä¸¦ã³é †ã§ä¸‹ã«é€£ã‚Œå„ªå…ˆåº¦ã¯ä½ããªã‚‹
 
 public class SpeciaAttack : MonoBehaviour
 {
     //ArmorPiercing
-    //ˆê“x‚¾‚¯‘Šè‚ÌUŒ‚‚ğ–³Œø‰»
+    //ä¸€åº¦ã ã‘ç›¸æ‰‹ã®æ”»æ’ƒã‚’ç„¡åŠ¹åŒ–
     public void Armor_Piercing(bool flag)
     {
         if (!flag) return;
-        Debug.Log("–³Œø‰»");
+        Debug.Log("ç„¡åŠ¹åŒ–");
 
         flag = false;
     }
 
     //SpikedArmor
-    //UŒ‚‚ğó‚¯‚é“x‚É‘Šè‚É1ƒ_ƒ[ƒW”½Ë
+    //æ”»æ’ƒã‚’å—ã‘ã‚‹åº¦ã«ç›¸æ‰‹ã«1ãƒ€ãƒ¡ãƒ¼ã‚¸åå°„
     public void Spiked_Armor(int spikedHP)
     {
         spikedHP += -1;
     }
 
     //MissileAttack
-    //æ§‚Å‘Šè‚É2ƒ_ƒ[ƒW(ŒÅ’è)
+    //å…ˆåˆ¶ã§ç›¸æ‰‹ã«2ãƒ€ãƒ¡ãƒ¼ã‚¸(å›ºå®š)
     public void Missile_Attack(int deffenderHP)
     {
         deffenderHP += -2;
     }
 
     //ForceField
-    //‘Šè‚Ì–hŒä—Í‚ğ–³‹
+    //ç›¸æ‰‹ã®é˜²å¾¡åŠ›ã‚’ç„¡è¦–
     public void Force_Field(int deffender)
     {
         deffender = 0;
